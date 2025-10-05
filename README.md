@@ -134,10 +134,4 @@ Suggeriments i passos següents
 - Afegir tests automatitzats (PHPUnit per al backend, Cypress/Playwright per al flux E2E)
 - Afegir linter i hooks pre-commit (husky) per fer complir la guia d'estil
 
-Llicència
---------
-Afegeix aquí la llicència que prefereixis (per exemple MIT) o digues-me quina vols i l'afegeixo
 
-Contacte
---------
-Si vols que implementi alguna de les millores (configurar StandardJS, afegir autenticació a l'admin o millorar l'accessibilitat), digues quina i m'hi poso
