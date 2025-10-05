@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz de Banderes</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Optimizado: cargar solo los pesos 400 y 600 para reducir el tamaño -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page">
+        <h1 class="main-title">Quiz de Banderes</h1>
+        <div id="usuariContainer">
+            <form id="formUsuari" novalidate>
+                <label for="nomUsuari" class="label-mayus">INTRODUEIX EL TEU NOM:</label>
+                <input type="text" id="nomUsuari" required />
+                <!-- Usamos submit para que Enter funcione; el JS previene el comportamiento por defecto y gestiona el inicio -->
+                <button type="submit" id="btnComencar">Començar</button>
+            </form>
+            <!-- Clasificación no visible desde la pantalla de inicio (guardada solo en la base de datos) -->
+            <div id="salutacio" class="hidden">
+                <span id="missatgeSalutacio"></span>
+            </div>
+        </div>
+
+        <div id="temps" style="font-weight:bold; margin-bottom:10px;"></div>
+
+        <div id="partida" class="card"></div>
+
+        <div id="marcador" class="card"></div>
+
+        <button id="btnEnviar" class="hidden">Enviar Resultats</button>
+
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

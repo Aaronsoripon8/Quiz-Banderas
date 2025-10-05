@@ -1,0 +1,257 @@
+/* Diseño global y tipografía */
+:root{
+  /* Paleta moderna Indigo-Teal con mayor contraste */
+  --bg: #e3f0ff;           /* azul clarito, amigable */
+  --card: #ffffff;
+  --muted: #2563eb;          /* azul profundo para texto secundario */
+  --accent: #2563eb;
+  --accent-contrast: #ffffff;
+  --success: #0ea5a4;
+  --danger: #ef4444;
+  --text: #0f1724;
+  --radius: 14px;
+  --max-width: 1000px;
+  --spacer: 18px; /* unidad base de espaciado */
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{font-family: Inter, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}
+.page{display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 90vh;}
+.page{max-width:var(--max-width);margin:32px auto;padding:calc(var(--spacer) * 1.25)}
+h1{font-size:3.2rem;margin:0 0 calc(var(--spacer) / 2); text-align: center;}
+.main-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 0.1rem; /* casi sin separación con el formulario */
+  margin-top: 0.5rem;
+  color: var(--accent);
+  letter-spacing: 1px;
+}
+
+/* Tarjeta / área de la pregunta */
+.card{background:var(--card);border-radius:var(--radius);box-shadow:0 8px 24px rgba(15,23,36,0.09);padding:calc(var(--spacer) * 1.2)}
+.pregunta{display:flex;gap:calc(var(--spacer) * 0.9);align-items:flex-start}
+.pregunta img{border-radius:6px;max-width:220px;height:auto;object-fit:cover}
+.pregunta h3{margin:0 0 calc(var(--spacer) / 3);font-size:1.15rem}
+
+/* Diseño de la tarjeta de pregunta: centrada, más grande y con flujo en columna */
+#partida.card {
+  width: 760px;
+  max-width: 94vw;
+  margin: 14px auto;
+  padding: 2.2rem;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 18px 48px rgba(37,99,235,0.08);
+}
+#partida.card .pregunta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+#partida.card .pregunta h3 {
+  font-size: 1.9rem;
+  margin: 0;
+  line-height: 1.15;
+  color: var(--text);
+}
+#partida.card .pregunta img {
+  width: 100%;
+  max-width: 640px;
+  aspect-ratio: 16 / 10; /* caja de visualización consistente */
+  object-fit: contain;   /* preserva la bandera completa dentro de la caja */
+  height: auto; /* dejar que aspect-ratio controle la altura */
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(37,99,235,0.08);
+  background: #ffffff; /* fondo blanco para que banderas con bordes blancos se vean bien */
+  padding: 8px; /* pequeño relleno interno para separar la bandera del borde */
+  border: 3px solid #c7dbff; /* borde azul sutil que combina con los botones */
+}
+#partida.card .respostes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  width: 100%;
+  margin-top: 18px;
+}
+#partida.card .respostes .btnResposta {
+  font-size: 1.05rem;
+  padding: 14px 12px;
+  text-align: center;
+  min-height: 56px;
+  align-self: stretch;
+  border-radius: 12px;
+  background: #f7fbff;
+  border: 1px solid #c7dbff;
+}
+#partida.card .respostes .btnResposta[aria-pressed="true"]{background:#def;border-color:#9be7ff}
+#partida.card .respostes .btnResposta.correct { background: #b5ecc5 !important; border-color: #5be693 !important; color: #064a2a; }
+#partida.card .respostes .btnResposta.incorrect { background: #f09999 !important; border-color: #e05959 !important; color: #5a1a1a; }
+
+/* Botones */
+/* Botones: usar fondo claro, borde de acento y texto oscuro para mayor contraste */
+button{font-size:0.98rem;padding:10px 14px;border-radius:10px;border:1px solid var(--accent);background:#e6edfa;color:var(--text);cursor:pointer;margin:6px}
+button[type="button"].secondary, .btn-secondary{background:#fff;border-color:#e6e9ef;color:var(--text)}
+.button--disabled, button:disabled{opacity:.55;cursor:not-allowed}
+.btnResposta{display:block;width:100%;text-align:left;padding:12px;border-radius:10px;margin:10px 0;border:1px solid #b3c7f7;background:#f5f8ff;color:var(--text)}
+.btnResposta[aria-pressed="true"]{background:#e6fbff;border-color:#9be7ff}
+
+/* Colores para feedback de respuestas */
+.btnResposta.correct { background: #b5ecc5 !important; border-color: #5ce492 !important; color: #064a2a; }
+.btnResposta.incorrect { background: #f09999 !important; border-color: #e05959 !important; color: #5a1a1a; }
+
+/* Transiciones y estados hover */
+button, .btnResposta { transition: all .18s ease-in-out }
+button:hover { transform: translateY(-1px); box-shadow: 0 6px 14px rgba(37,99,235,0.12) }
+.btnResposta:hover { transform: translateY(-1px); box-shadow: 0 6px 12px rgba(6,95,70,0.04) }
+.card { transition: transform .16s ease, box-shadow .16s ease }
+.card:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(15,23,36,0.08) }
+
+/* Temporizador y marcador */
+#temps{font-weight:700;color:var(--muted);margin-bottom:calc(var(--spacer) / 2)}
+#marcador{margin-top:calc(var(--spacer) / 2);color:var(--muted)}
+
+/* Pantalla final */
+.final{margin-top:calc(var(--spacer) / 2);padding:calc(var(--spacer) * 0.9);border-radius:10px;background:linear-gradient(180deg,#fff,#fbfdff);border:1px solid #eef3ff}
+.leaderboard{margin-top:calc(var(--spacer) / 2)}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:8px;overflow:hidden}
+table th, table td{padding:14px 12px;text-align:left}
+table thead{background:#f3f6fa}
+table tr:nth-child(even){background:#fafbfd}
+
+/* Formulario */
+form input[type="text"], textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef}
+form label{display:block;margin-bottom:8px;color:var(--muted)}
+
+/* pequeños utilitarios */
+.hidden{display:none}
+.error{color:var(--danger);background:#fff5f5;padding:12px;border-radius:8px}
+.success{color:var(--success);background:#f6fffa;padding:12px;border-radius:8px}
+
+/* Estilos del formulario de usuario */
+#usuariContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  margin-top: -0.5rem; /* elimina cualquier separación extra */
+}
+#formUsuari {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--card);
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(37,99,235,0.10);
+  margin: 0 auto;
+  min-width: 340px;
+  max-width: 90vw;
+}
+#formUsuari label {
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+  color: var(--muted);
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+#formUsuari input[type="text"] {
+  font-size: 1.3rem;
+  padding: 1.1rem 1.2rem;
+  border-radius: 12px;
+  border: 2px solid #b3c7f7;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 350px;
+  background: #f5f8ff;
+  text-align: center;
+}
+#btnComencar {
+  font-size: 1.2rem;
+  padding: 1rem 2.2rem;
+  border-radius: 12px;
+  background: var(--accent);
+  color: var(--accent-contrast);
+  border: none;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(37,99,235,0.10);
+  margin-top: 0.5rem;
+  transition: background 0.18s;
+}
+#btnComencar:hover {
+  background: #23408e;
+}
+#salutacio {
+  margin-top: 2.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  #formUsuari {
+    min-width: unset;
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+  }
+  #formUsuari input[type="text"] {
+    font-size: 1.1rem;
+    padding: 0.8rem 0.7rem;
+  }
+}
+
+@media(min-width:760px){
+  .pregunta{align-items:center}
+}
+
+/* Ocultar contenedores vacíos para que no aparezcan cajas blancas en la pantalla de inicio */
+#partida:empty, #marcador:empty { display: none; }
+
+/* foco accesible */
+button:focus, .btnResposta:focus, a:focus{outline:3px solid rgba(31,111,235,0.12);outline-offset:2px}
+
+/* Estilos de administración: movidos a api/admin.php para que solo se carguen en la página de administración */
+
+/* ...existing code... */
+
+@media (max-width: 760px) {
+  /* Ajustes generales para móviles: márgenes y padding más pequeños */
+  .page { padding: 12px; }
+  .main-title { font-size: 2rem; }
+
+  /* Formulario de usuario: ocupar casi todo el ancho y reducir paddings */
+  #formUsuari { padding: 1.2rem; min-width: unset; width: 100%; }
+  #formUsuari input[type="text"] { font-size: 1rem; padding: 0.9rem; max-width: 100%; }
+  #btnComencar { width: 100%; padding: 0.9rem; }
+
+  /* Tarjeta de preguntas: reducir anchura y usar columna única para respuestas */
+  #partida.card { width: 100%; padding: 1.2rem; margin: 12px 0; }
+  #partida.card .pregunta h3 { font-size: 1.35rem; }
+  #partida.card .pregunta img { max-width: 100%; aspect-ratio: 4/3; padding: 6px; border-width: 2px; }
+  #partida.card .respostes { grid-template-columns: 1fr; gap: 12px; }
+  #partida.card .respostes .btnResposta { font-size: 1rem; padding: 12px; min-height: 48px; }
+
+  /* Marcador y temporizador */
+  #marcador { font-size: 0.95rem; }
+  #temps { font-size: 0.95rem; }
+
+  /* Final / leaderboard: tablas scrollables y fuente más pequeña */
+  .leaderboard table { font-size: 0.95rem; }
+  table { display: block; overflow-x: auto; }
+
+  /* Reducción de sombras y hover en móviles para rendimiento */
+  .card { box-shadow: 0 6px 18px rgba(15,23,36,0.06); }
+  button:hover { transform: none; box-shadow: none; }
+}
+
+@media (max-width: 420px) {
+  .main-title { font-size: 1.6rem; }
+  #formUsuari label { font-size: 1.1rem; }
+  #partida.card .pregunta h3 { font-size: 1.1rem; }
+  #partida.card .respostes .btnResposta { padding: 10px; font-size: 0.95rem; }
+}

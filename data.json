@@ -1,0 +1,244 @@
+{
+  "preguntes": [
+    {
+      "id": 1,
+      "pregunta": "A quin país pertany aquesta bandera?",
+      "respostes": [
+        { "id": 1, "etiqueta": "França" },
+        { "id": 2, "etiqueta": "Itàlia" },
+        { "id": 3, "etiqueta": "Països Baixos" },
+        { "id": 4, "etiqueta": "Rússia" }
+      ],
+      "resposta_correcta": 1,
+      "imatge": "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"
+    },
+    {
+      "id": 2,
+      "pregunta": "A quin país pertany aquesta bandera?",
+      "respostes": [
+        { "id": 1, "etiqueta": "Suècia" },
+        { "id": 2, "etiqueta": "Finlàndia" },
+        { "id": 3, "etiqueta": "Noruega" },
+        { "id": 4, "etiqueta": "Dinamarca" }
+      ],
+      "resposta_correcta": 3,
+      "imatge": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg"
+    },
+    {
+      "id": 3,
+      "pregunta": "A quin país pertany aquesta bandera?",
+      "respostes": [
+        { "id": 1, "etiqueta": "Alemanya" },
+        { "id": 2, "etiqueta": "Bèlgica" },
+        { "id": 3, "etiqueta": "Espanya" },
+        { "id": 4, "etiqueta": "Àustria" }
+      ],
+      "resposta_correcta": 1,
+      "imatge": "https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg"
+    },
+    {
+      "id": 4,
+      "pregunta": "A quin país pertany aquesta bandera?",
+      "respostes": [
+        { "id": 1, "etiqueta": "Brasil" },
+        { "id": 2, "etiqueta": "Portugal" },
+        { "id": 3, "etiqueta": "Mèxic" },
+        { "id": 4, "etiqueta": "Argentina" }
+      ],
+      "resposta_correcta": 1,
+      "imatge": "https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg"
+    },
+    {
+      "id": 5,
+      "pregunta": "A quin país pertany aquesta bandera?",
+      "respostes": [
+        { "id": 1, "etiqueta": "Canadà" },
+        { "id": 2, "etiqueta": "Estats Units" },
+        { "id": 3, "etiqueta": "Austràlia" },
+        { "id": 4, "etiqueta": "Regne Unit" }
+      ],
+      "resposta_correcta": 1,
+      "imatge": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg"
+    },
+    {
+      "id": 6,
+      "pregunta": "A quin país pertany aquesta bandera?",
+      "respostes": [
+        { "id": 1, "etiqueta": "Índia" },
+        { "id": 2, "etiqueta": "Pakistan" },
+        { "id": 3, "etiqueta": "Bangladesh" },
+        { "id": 4, "etiqueta": "Sri Lanka" }
+      ],
+      "resposta_correcta": 1,
+      "imatge": "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg"
+    },
+    {
+      "id": 7,
+      "pregunta": "A quin país pertany aquesta bandera?",
+      "respostes": [
+        { "id": 1, "etiqueta": "Xina" },
+        { "id": 2, "etiqueta": "Japó" },
+        { "id": 3, "etiqueta": "Corea del Sud" },
+        { "id": 4, "etiqueta": "Vietnam" }
+      ],
+      "resposta_correcta": 2,
+      "imatge": "https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg"
+    },
+    {
+      "id": 8,
+      "pregunta": "A quin país pertany aquesta bandera?",
+      "respostes": [
+        { "id": 1, "etiqueta": "Egipte" },
+        { "id": 2, "etiqueta": "Marroc" },
+        { "id": 3, "etiqueta": "Tunísia" },
+        { "id": 4, "etiqueta": "Algèria" }
+      ],
+      "resposta_correcta": 3,
+      "imatge": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg"
+    },
+    {
+      "id": 9,
+      "pregunta": "A quin país pertany aquesta bandera?",
+      "respostes": [
+        { "id": 1, "etiqueta": "Corea del Sud" },
+        { "id": 2, "etiqueta": "Xina" },
+        { "id": 3, "etiqueta": "Japó" },
+        { "id": 4, "etiqueta": "Taiwan" }
+      ],
+      "resposta_correcta": 1,
+      "imatge": "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg"
+    },
+    {
+      "id": 10,
+      "pregunta": "A quin país pertany aquesta bandera?",
+      "respostes": [
+        { "id": 1, "etiqueta": "Austràlia" },
+        { "id": 2, "etiqueta": "Nova Zelanda" },
+        { "id": 3, "etiqueta": "Regne Unit" },
+        { "id": 4, "etiqueta": "Fiji" }
+      ],
+      "resposta_correcta": 1,
+      "imatge": "https://upload.wikimedia.org/wikipedia/en/b/b9/Flag_of_Australia.svg"
+    },
+    {
+      "id": 11,
+      "pregunta": "A quin país pertany aquesta bandera?",
+      "respostes": [
+        { "id": 1, "etiqueta": "Espanya" },
+        { "id": 2, "etiqueta": "Mèxic" },
+        { "id": 3, "etiqueta": "Colòmbia" },
+        { "id": 4, "etiqueta": "Veneçuela" }
+      ],
+      "resposta_correcta": 1,
+      "imatge": "https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg"
+    },
+    {
+      "id": 12,
+      "pregunta": "A quin país pertany aquesta bandera?",
+      "respostes": [
+        { "id": 1, "etiqueta": "Grècia" },
+        { "id": 2, "etiqueta": "Turquia" },
+        { "id": 3, "etiqueta": "Xipre" },
+        { "id": 4, "etiqueta": "Croàcia" }
+      ],
+      "resposta_correcta": 1,
+      "imatge": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg"
+    },
+    {
+      "id": 13,
+      "pregunta": "A quin país pertany aquesta bandera?",
+      "respostes": [
+        { "id": 1, "etiqueta": "Suïssa" },
+        { "id": 2, "etiqueta": "Dinamarca" },
+        { "id": 3, "etiqueta": "Noruega" },
+        { "id": 4, "etiqueta": "Suècia" }
+      ],
+      "resposta_correcta": 1,
+      "imatge": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg"
+    },
+    {
+      "id": 14,
+      "pregunta": "A quin país pertany aquesta bandera?",
+      "respostes": [
+        { "id": 1, "etiqueta": "Sud-àfrica" },
+        { "id": 2, "etiqueta": "Kènia" },
+        { "id": 3, "etiqueta": "Nigèria" },
+        { "id": 4, "etiqueta": "Ghana" }
+      ],
+      "resposta_correcta": 1,
+      "imatge": "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg"
+    },
+    {
+      "id": 15,
+      "pregunta": "A quin país pertany aquesta bandera?",
+      "respostes": [
+        { "id": 1, "etiqueta": "Argentina" },
+        { "id": 2, "etiqueta": "Uruguai" },
+        { "id": 3, "etiqueta": "Paraguai" },
+        { "id": 4, "etiqueta": "Xile" }
+      ],
+      "resposta_correcta": 1,
+      "imatge": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg"
+    },
+    {
+      "id": 16,
+      "pregunta": "A quin país pertany aquesta bandera?",
+      "respostes": [
+        { "id": 1, "etiqueta": "Turquia" },
+        { "id": 2, "etiqueta": "Tunísia" },
+        { "id": 3, "etiqueta": "Malàisia" },
+        { "id": 4, "etiqueta": "Singapur" }
+      ],
+      "resposta_correcta": 1,
+      "imatge": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg"
+    },
+    {
+      "id": 17,
+      "pregunta": "A quin país pertany aquesta bandera?",
+      "respostes": [
+        { "id": 1, "etiqueta": "Polònia" },
+        { "id": 2, "etiqueta": "Indonèsia" },
+        { "id": 3, "etiqueta": "Mònaco" },
+        { "id": 4, "etiqueta": "Àustria" }
+      ],
+      "resposta_correcta": 1,
+      "imatge": "https://upload.wikimedia.org/wikipedia/en/1/12/Flag_of_Poland.svg"
+    },
+    {
+      "id": 18,
+      "pregunta": "A quin país pertany aquesta bandera?",
+      "respostes": [
+        { "id": 1, "etiqueta": "Irlanda" },
+        { "id": 2, "etiqueta": "Costa d'Ivori" },
+        { "id": 3, "etiqueta": "Itàlia" },
+        { "id": 4, "etiqueta": "Hongria" }
+      ],
+      "resposta_correcta": 1,
+      "imatge": "https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Ireland.svg"
+    },
+    {
+      "id": 19,
+      "pregunta": "A quin país pertany aquesta bandera?",
+      "respostes": [
+        { "id": 1, "etiqueta": "Regne Unit" },
+        { "id": 2, "etiqueta": "Austràlia" },
+        { "id": 3, "etiqueta": "Nova Zelanda" },
+        { "id": 4, "etiqueta": "Fiji" }
+      ],
+      "resposta_correcta": 1,
+      "imatge": "https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg"
+    },
+    {
+      "id": 20,
+      "pregunta": "A quin país pertany aquesta bandera?",
+      "respostes": [
+        { "id": 1, "etiqueta": "Portugal" },
+        { "id": 2, "etiqueta": "Espanya" },
+        { "id": 3, "etiqueta": "Itàlia" },
+        { "id": 4, "etiqueta": "Brasil" }
+      ],
+      "resposta_correcta": 1,
+      "imatge": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg"
+    }
+  ]
+}
